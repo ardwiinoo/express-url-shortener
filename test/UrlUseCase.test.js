@@ -27,4 +27,3 @@ test(`createUrl should call UrlRepository.createUrl and return UrlEntity`, async
     expect(createUrlMock).toHaveBeenCalledWith(urlEntity);
     expect(createdUrl).toEqual(urlEntity);
 });
-
