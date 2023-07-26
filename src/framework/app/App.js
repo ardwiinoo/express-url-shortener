@@ -32,7 +32,7 @@ class App {
         const urlController = new UrlController(urlUseCase);
         const urlRoutes = createUrlRoutes(urlController);
 
-        this.app.use("/v1", urlRoutes.getUrlRouter());
+        this.app.use("/", urlRoutes.getUrlRouter());
     }
 
     setupMiddleware() {
