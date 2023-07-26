@@ -9,6 +9,8 @@ class UrlRoutes {
 
     setupRoutes() {
         this.router.post("/url", this.controller.createUrl.bind(this.controller));
+        this.router.get("/:shortId", this.controller.getUrl.bind(this.controller));
+        this.router.get("/stats/:shortId", this.controller.getStats.bind(this.controller));
     }
 
     getUrlRouter() {
